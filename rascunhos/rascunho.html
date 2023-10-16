@@ -1,0 +1,52 @@
+<div class="ui container center aligned">
+    <table class="ui celled table">
+        <caption><h1 class="centerd">Pessoas</h1></caption>
+        <thead>
+            <tr>
+                <th>Cpf</th>
+                <th>Pais</th>
+                <th>Endereço</th>
+                <th>cidade</th>
+                <th>País</th>
+                <th>Nome</th> 
+                <th>Data de Nascimento</th> 
+                <th>Sexo</th> 
+                <th>Mãe</th> 
+                <th>Pai</th> 
+                <th>RG (Número)</th> 
+                <th>RG (Data de Emissão)</th> 
+                <th>RG (UF de Emissão)</th> 
+                <th>RG (Orgão de Emissão)</th> 
+                <th>Endereço (Rua)</th> 
+                <th>Endereço (Número)</th> 
+                <th>Endereço (CEP)</th> 
+                <th>Endereço (Bairro)</th> 
+                <th>Título de Eleitor (Número)</th> 
+                <th>Título de Eleitor (Zona)</th> 
+                <th>Título de Eleitor (Seção)</th> 
+                <th>PIS/PASEP</th> 
+                <th>Telefone Residencial</th> 
+                <th>Telefone Celular</th> 
+                <th>Estado Civil</th> 
+                <th>Altura</th> 
+                <th>Peso</th> 
+                <th>Raça/Cor</th> 
+                <th>Cor dos Olhos</th> 
+                <th>Instrução Escolar</th>
+            </tr>
+        </thead>
+        <tbody id="pessoas">
+        </tbody>
+    </table>
+</div>
+
+
+
+$.post("database/cargos.json", function(data){
+    for(let i = 0; i < data.length; i++) {
+        $("#cargos").append("<tr> <td data-label name='cargo'>"+ data[i].cargo_nome+"</td>"
+        +"<td data-label name='orgao'>" + data[i].cargo_orgao+ "</td>"
+        +"<td data-label name='tempo_especial'>"+data[i].cargo_tempo_especial+"</td>"
+        +"<td data-label name='acumulavel'>"+data[i].cargo_acumulavel+"</td> </tr>");
+    }
+}, "json");
