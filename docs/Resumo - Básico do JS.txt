@@ -1,0 +1,85 @@
+1 - ) Faça um olá mundo!
+console.log("Olá Mundo!");
+2 - ) Peça ao usuario 2 números inteiros, faça a soma deles, e apresente o resultado;
+var a = 1;
+var b = 2;
+var resultado = a + b;
+
+console.log("Resultado: "+resultado);
+
+3 - ) Crie um array e popule 5 elementos nele;
+
+var anime = [
+    {
+      nome : "Naruto",
+      genero : "shoune, aventura, comédia",
+      estudio : "Toe Animetion",
+      descricao : "aasasasassa",
+      quantidadeEp : 300,
+    },
+    
+    {
+      nome : "Dragonall",
+      genero : "shoune, aventura, comédia",
+      estudio : "Toe Animetion",
+      descricao : "aasasasassa",
+      quantidadeEp : 300,
+    },
+];
+
+for(let i = 0; i < anime.length; i++){
+    console.log(anime[i].nome +" | "+ anime[i].genero + " | "+ anime[i].estudio + " | "+ anime[i].descricao + " | " + anime[i].quantidadeEp);
+}
+
+
+4 - ) Explique a diferença entre const, var e let;
+
+const: A variável LET (constante) representa os valores fixos, que não recebem mudança;
+var: A variável VAR representa todos os valores que podem ser atualizados podendo assumir vários tipos como inteiros, lógico e de string;
+let: A variável LET representa os valores que são fixos como acontece no CONST, mas podendo ser alterado e não é global igual o VAR. 
+
+5 - ) crie uma variavel booleana;
+var testeverdade = true;
+
+6 - ) Crie uma função para multiplicar dois números fornecidos pelo usuario via prompt de comando;
+var valor1 = prompt();
+var valor2 = prompt();
+var resultado = valor1 * valor2;
+alert("resultado da sua conta:"+resultado);
+
+7 - ) Crie uma função para retornar se um valor é igual ao número 5 ou não;
+var Number = prompt("Quanto é 2 + 3 ?");
+FiverNumber(Number);
+function FiverNumber(Number){
+	if(Number == 5){
+	   alert("O valor é igual a "+ Number);
+	}
+	else{
+	   alert("Valor informado está incorreto");
+	}
+}
+
+
+8 - ) Explique com suas palavras o que é JavaScript.
+JavaScript é uma linguagem de programação voltado para o cenário da WEB, assim atráves dela é possivel fazer manipulação de elementos(objetos), além da linguagem ser um interpretador.
+
+9 - ) Liste em um Loop valores de 0 até o valor 10;
+
+	for(let i = 0; i < 10; i++){
+	   console.log(i+"º");
+	}
+
+10 - ) Explique com suas palavras o que é CallBack e como usar;
+
+A função de CallBack é para obter resultados de execução de determinadas funções do código, asssim utiliza-se o setTime para definir um tempo X para compilação dessa determinada função.   
+
+11 - ) Crie um array contendo 10 nomes de frutas, e ao final da execução Liste esses dados via console log;
+
+	var frutas = ["Morango","Melão","Abacaxi","Banana","Maça","Pera","Uva","Laranja","Tanja","Melancia"];
+	for (let i = 0; i < frutas.length; i++){
+	   console.log("- "+ frutas[i]);
+	}
+
+12 - ) Explique a diferença com suas palavras entre console.log, Alert e Prompt;
+
+	Os trens itens são meios de passar informações ao usuário, o console.log retorna mensagem de maneira mais rápida por retornar dentro do console. Alert já aparece um pop-up na página WEB para informar algo ao usuário como "Seu cadastro foi realizado" e tendo apenas um botão que de padrão se chama "OK". O prompt aparee um pop-up para o usuário na página WEB com o intuito de coletar informações, assim tendo uma entrada de valor com seu titulo(label) e botões(ok e cancelar). Dessa forma, esses itens iteragem com usuário enviando informação como também coletando. 
